@@ -1,0 +1,36 @@
+model Model
+	culture: en-GB
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["events","users","measures (2)","orders","order_items","products"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.140.1476.0 (25.02)+e8c6a85d1d09735c5c055c3244a60ff4076cd2cf
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table events
+ref table DateTableTemplate_6e8cc7af-0b63-4978-99c3-42b5c97e2762
+ref table LocalDateTable_791b2ade-7f67-451a-9704-8269937f0d13
+ref table users
+ref table LocalDateTable_0d4ff8be-6f4a-4996-9103-658d1e46bfcb
+ref table 'measures (2)'
+ref table orders
+ref table LocalDateTable_7d1d7a11-b890-4b56-9599-7b699a9885e4
+ref table LocalDateTable_981e46ee-dd1b-4a21-bb2a-cfc914104bef
+ref table LocalDateTable_1e68ba94-446b-4230-b9e6-c23b21edd9ad
+ref table LocalDateTable_52bb7d53-3e7c-49ba-9b2d-f6eeaf790a4f
+ref table order_items
+ref table LocalDateTable_cc8d2c12-09a8-484e-a957-42314afc626b
+ref table LocalDateTable_bf5e0a10-2711-4718-b58c-366ee1915b0d
+ref table LocalDateTable_6adbe76b-fb9b-4712-8ebc-8e26c25d3fe6
+ref table LocalDateTable_fbe77109-9baa-4576-aef9-d862f37b1c0f
+ref table products
+
+ref cultureInfo en-GB
+

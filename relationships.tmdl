@@ -1,0 +1,62 @@
+relationship 19f21d88-e7c0-4309-87a9-31e2ef89ecc6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: events.created_at
+	toColumn: LocalDateTable_791b2ade-7f67-451a-9704-8269937f0d13.Date
+
+relationship 4692f14a-0da0-4f35-b8f9-67d93ca287ae
+	joinOnDateBehavior: datePartOnly
+	fromColumn: users.created_at
+	toColumn: LocalDateTable_0d4ff8be-6f4a-4996-9103-658d1e46bfcb.Date
+
+relationship 15e4b713-bfa4-a8e3-1777-57b732a3d195
+	fromColumn: events.user_id
+	toColumn: users.id
+
+relationship 1433fd34-0506-4f7d-bf27-340c49e52b87
+	joinOnDateBehavior: datePartOnly
+	fromColumn: orders.created_at
+	toColumn: LocalDateTable_7d1d7a11-b890-4b56-9599-7b699a9885e4.Date
+
+relationship c13e3e14-3db3-4535-aff9-4c0f7ba10ee4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: orders.returned_at
+	toColumn: LocalDateTable_981e46ee-dd1b-4a21-bb2a-cfc914104bef.Date
+
+relationship f496eaf6-7aea-45e1-8cf9-9adf7494cf74
+	joinOnDateBehavior: datePartOnly
+	fromColumn: orders.shipped_at
+	toColumn: LocalDateTable_1e68ba94-446b-4230-b9e6-c23b21edd9ad.Date
+
+relationship f3c09281-62b7-4d47-908b-a16a01c6e56d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: orders.delivered_at
+	toColumn: LocalDateTable_52bb7d53-3e7c-49ba-9b2d-f6eeaf790a4f.Date
+
+relationship 0c884ecc-c35b-4036-94b8-26735bcc2ad6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: order_items.created_at
+	toColumn: LocalDateTable_cc8d2c12-09a8-484e-a957-42314afc626b.Date
+
+relationship fe7b0dcb-7f4d-4faa-a418-7473c72f1430
+	joinOnDateBehavior: datePartOnly
+	fromColumn: order_items.shipped_at
+	toColumn: LocalDateTable_bf5e0a10-2711-4718-b58c-366ee1915b0d.Date
+
+relationship 29e6dafa-a4b6-4100-85ec-2e100fc306b5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: order_items.delivered_at
+	toColumn: LocalDateTable_6adbe76b-fb9b-4712-8ebc-8e26c25d3fe6.Date
+
+relationship 17ffa98e-7c65-4d62-a632-567f96bec7a4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: order_items.returned_at
+	toColumn: LocalDateTable_fbe77109-9baa-4576-aef9-d862f37b1c0f.Date
+
+relationship 145f86ec-a2da-f7e1-977e-14c6f5c04bad
+	fromColumn: order_items.product_id
+	toColumn: products.id
+
+relationship f4edd8df-fe48-5e5a-a594-34d0d9a5a43c
+	fromColumn: order_items.order_id
+	toColumn: orders.order_id
+
